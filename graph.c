@@ -9,7 +9,6 @@ typedef struct Boid
     double vx;
     double vy;
 } Boid;
-// gcc graph.c -lm -lSDL2
 
 void updateBoids(Boid *boids, int numBoids, double scaleFactor)
 {
@@ -237,6 +236,8 @@ void drawCircle(SDL_Renderer* renderer, int x, int y, int radius)
 
 int main(int argc, char *argv[])
 {
+    (void)argc;
+    (void)argv;
     SDL_Init(SDL_INIT_VIDEO);
 
     // get the current display mode
